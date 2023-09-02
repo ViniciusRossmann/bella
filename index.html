@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Questionário</title>
+    <link rel="icon" href="icone.png" />
+    <title>Você conhece o Vinícius?</title>
     <link rel="stylesheet" href="app.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
@@ -15,12 +16,15 @@
             <p>Você conhece o Vinícius?</p>
         </div>
     </header>
+    <div class="pontuacao">
+        Pontos:&nbsp;<p id="pontos"></p>
+    </div>
     <main>
         <div class="container">
-            <h1 id="texto-pergunta">Você aceita? 🤔♥️</h1>
+            <h1 id="texto-pergunta"></h1>
             <div class="cta" id="opcoes"></div>
+        </div>
     </main>
-    </div>
     <footer>
         <a href="https://github.com/ViniciusRossmann">
             © 2023 - Vinícius Rossmann Nunes
@@ -28,4 +32,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
+
+    <div id="tela-texto" class="loader">
+        <main class="texto-tela-inteira">
+            <h1>E agora, a pergunta mais importante...</h1>
+        </main>
+    </div>
 </html>
